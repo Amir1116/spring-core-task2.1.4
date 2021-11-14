@@ -10,37 +10,30 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "koschei")
 public class AppConfig {
 
-    @Bean
     public static Island2 getIsland() {
-        return new Island2();
+        return new Island2(getWood());
     }
 
-    @Bean
     public static Wood3 getWood(){
-        return new Wood3();
+        return new Wood3(getRabbit());
     }
 
-    @Bean
     public static Rabbit4 getRabbit(){
-        return new Rabbit4();
+        return new Rabbit4(getDuck());
     }
 
-    @Bean
     public static Duck5 getDuck(){
-        return new Duck5();
+        return new Duck5(getEgge());
     }
 
-    @Bean
     public static Egg6 getEgge(){
-        return new Egg6();
+        return new Egg6(getNeedle());
     }
 
-    @Bean
     public static Needle7 getNeedle(){
-        return new Needle7();
+        return new Needle7(getDeath());
     }
 
-    @Bean
     public static Deth8 getDeath(){
         return new Deth8();
     }

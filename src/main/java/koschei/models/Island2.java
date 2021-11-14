@@ -1,20 +1,17 @@
 package koschei.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("island")
 public class Island2 {
 
-    @Autowired
-    @Qualifier("wood")
-    private Wood3 wood;
+    private final Wood3 wood;
 
-//    @Autowired
-//    public Island2(@Qualifier("wood")Wood3 wood){
-//        this.wood = wood;
-//    }
+    @Autowired
+    public Island2(Wood3 wood){
+        this.wood = wood;
+    }
 
     @Override
     public String toString() {

@@ -1,15 +1,17 @@
 package koschei.models;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component("duck")
 public class Duck5 {
 
+    private final Egg6 egge;
+
     @Autowired
-    @Qualifier("egge")
-    private Egg6 egge;
+    public Duck5(Egg6 egge){
+        this.egge = egge;
+    }
 
     @Override
     public String toString() {
