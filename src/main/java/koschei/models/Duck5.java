@@ -9,7 +9,7 @@ public class Duck5 {
     private final Egg6 egge;
 
     @Autowired
-    public Duck5(Egg6 egge){
+    public Duck5(Egg6 egge) {
         this.egge = egge;
     }
 

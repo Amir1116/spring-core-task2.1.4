@@ -6,10 +6,13 @@ import org.springframework.stereotype.Component;
 @Component("island")
 public class Island2 {
 
-    private final Wood3 wood;
+    private Wood3 wood;
+
+    public Island2() {
+    }
 
     @Autowired
-    public Island2(Wood3 wood){
+    public Island2(Wood3 wood) {
         this.wood = wood;
     }
 

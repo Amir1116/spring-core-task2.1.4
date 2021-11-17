@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class Needle7 {
 
     @Autowired
-    public Needle7(Deth8 death){
+    public Needle7(Deth8 death) {
     }
 
     @Override
